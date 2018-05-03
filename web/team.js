@@ -4,7 +4,7 @@ function clicked() {
 
 function changeColor() {
     var textbox_id = "divColor";
-    var textbox    = "document.getElementById(textbox_id)";
+    var textbox    = document.getElementById(textbox_id);
 
     var div_id = "1";
     var div    = document.getElementById(div_id);
