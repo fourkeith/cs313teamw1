@@ -3,12 +3,11 @@ function clicked() {
 }
 
 function changeColor() {
-    var textbox_id = "divColor";
-    var textbox    = document.getElementById(textbox_id);
-
-    var div_id = "div1";
-    var div    = document.getElementById(div_id);
+    var textbox    = document.getElementById(divColor);
+    
+    var div    = document.getElementById(div1);
 
     var color  = textbox.value;
     div.style.backgroundColor = color;
 }
+
