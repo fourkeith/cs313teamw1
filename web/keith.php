@@ -32,7 +32,7 @@
 <?php
 
     function clicked() {
-        echo "Ha you did";
+        alert("Ha you did");
     }
 ?>
 </html>
