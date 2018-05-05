@@ -18,7 +18,7 @@
 		  </div>
 		  <ul class="navbar-brand">
 		     <li class="active"><a href="/keith.php">Keith's Page</a></li>
-		     <li>Coming soon</li>
+		     <li><a href="/hello.html">Prove 1</a></li>
 		  </ul>
 	       </div>
 	    </nav>
