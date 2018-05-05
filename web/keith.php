@@ -32,7 +32,7 @@
 <?php
 
     function clicked() {
-        document.getElementById("button").innerhtml = "Ha you did";
+        echo "Ha you did";
     }
 ?>
 </html>
