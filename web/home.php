@@ -11,6 +11,17 @@
       <div class="container">
          <div class="jumbotron">
 	    <h1>Assignments</h1>
+	    <nav class="navbar navbar-default">
+	       <div class="container-fluid">
+	          <div class="navbar-header">
+		     <a class="navbar-brand" href="/keith.php">Keith's Page</a>
+		  </div>
+		  <ul class="navbar-brand">
+		     <li class="active"><a href="/home.php">Home</a></li>
+		     <li>Coming soon</li>
+		  </ul>
+	       </div>
+	    </nav>
 	 </div>
       </div>
    </body>
