@@ -14,10 +14,10 @@
 	    <nav class="navbar navbar-default">
 	       <div class="container-fluid">
 	          <div class="navbar-header">
-		     <a class="navbar-brand" href="/keith.php">Keith's Page</a>
+		     <a class="navbar-brand" href="/home.php">Assignments page</a>
 		  </div>
 		  <ul class="navbar-brand">
-		     <li class="active"><a href="/home.php">Home</a></li>
+		     <li class="active"><a href="/keith.php">Keith's Page</a></li>
 		     <li>Coming soon</li>
 		  </ul>
 	       </div>
