@@ -27,4 +27,11 @@
         <button type="button" id="button" onclick="clicked()">Click Me!!!</button>
       </div>
    </body>
+
+<?php
+
+    function clicked() {
+        document.getElementById("button").innerhtml = "Ha you did";
+    }
+?>
 </html>
