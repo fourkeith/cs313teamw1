@@ -10,7 +10,7 @@
    <body>
       <div class="container">
         <h1>Class Schedule</h1>
-        <table>
+        <table class="table-hover">
             <tr>
                 <th>Class</th>
                 <th>Time</th>
@@ -20,6 +20,16 @@
                 <td>Online</td>
             </tr>
         </table>
+
+        <br/>
+        
+        <img src="keithnchelsey.jpg" class="img-rounded" alt="Picture">
+        <button type="button" id="button" onclick="clicked()" value="Click ME!!!"></button>
+        <?php
+            function clicked() {
+                    document.getElementById("button").innerhtml = "Ha you did";
+                }
+        ?>
       </div>
    </body>
 </html>
