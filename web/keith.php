@@ -1,7 +1,7 @@
 <DOCTYPE html>
 <html>
    <head>
-      <title>Assignment Page</title>
+      <title>Keith's Page</title>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -9,20 +9,17 @@
    </head>
    <body>
       <div class="container">
-         <div class="jumbotron">
-	    <h1>Assignments</h1>
-	    <nav class="navbar navbar-default">
-	       <div class="container-fluid">
-	          <div class="navbar-header">
-		     <a class="navbar-brand" href="/home.php">Assignments page</a>
-		  </div>
-		  <ul class="navbar-brand">
-		     <li class="active"><a href="/keith.php">Keith's Page</a></li>
-		     <li><a href="/hello.html">Prove 1</a></li>
-		  </ul>
-	       </div>
-	    </nav>
-	 </div>
+        <h1>Class Schedule</h1>
+        <table>
+            <tr>
+                <th>Class</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>CS313 Web Development II</td>
+                <td>Online</td>
+            </tr>
+        </table>
       </div>
    </body>
 </html>
