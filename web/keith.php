@@ -25,14 +25,12 @@
         
         <img src="keithnchelsey.jpg" class="img-rounded" alt="Picture">
         <button type="button" onclick="clicked()">Click Me!!!</button>
-        <div id="button" class="well"></div>
       </div>
    </body>
 
-<?php
-
+<script>
     function clicked() {
         alert("Ha you did");
     }
-?>
+</script>
 </html>
