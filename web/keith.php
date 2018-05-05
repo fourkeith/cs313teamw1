@@ -24,12 +24,7 @@
         <br/>
         
         <img src="keithnchelsey.jpg" class="img-rounded" alt="Picture">
-        <button type="button" id="button" onclick="clicked()" value="Click ME!!!"></button>
-        <?php
-            function clicked() {
-                    document.getElementById("button").innerhtml = "Ha you did";
-                }
-        ?>
+
       </div>
    </body>
 </html>
