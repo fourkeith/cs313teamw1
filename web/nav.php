@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default">
 	       <div class="container-fluid">
 	          <div class="navbar-header">
-		     <a class="navbar-brand" href="/home.php">Assignments page</a>
+		     <a href="/home.php">Assignments page</a>
 		  </div>
 		     <a href="/keith.php">Keith's Page</a>
 		     <a href="/hello.html">Prove 1</a>
