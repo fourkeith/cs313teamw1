@@ -9,6 +9,7 @@
    </head>
    <body>
       <div class="container">
+      <?php include 'nav.php'; ?>
         <h1>Class Schedule</h1>
         <table class="table-hover">
             <tr>
