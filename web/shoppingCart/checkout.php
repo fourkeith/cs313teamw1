@@ -1,5 +1,5 @@
 <?php
-include'./web/nav.php'
+include'./web/nav.php';
 session_start();
 // reset
 if ( isset($_GET['reset']) ) {
