@@ -64,6 +64,6 @@ $_SESSION["total"] = $total;
 		<td colspan="5"></td>
 	</tr>
 	<tr>
-		<td colspan="5"><a href="showCart.php">Checkout</a></td>
+		<td colspan="5"><a href="checkout.php">Checkout</a></td>
 	</tr>
 </table>

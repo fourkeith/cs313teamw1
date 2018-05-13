@@ -40,7 +40,8 @@ foreach ( $_SESSION["cart"] as $i ) {
 		<td colspan="7">Total : <?php echo($total); ?></td>
 	</tr>
 </table>
-<a href="?reset=true">Reset Cart</a></td>
+<a href="showCart.php">Submit</a>
+<a href="?reset=true">Reset Cart</a>
 <?php
 }
 ?>
