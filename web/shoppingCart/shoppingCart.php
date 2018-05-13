@@ -56,12 +56,10 @@ for ($i=0; $i< count($products); $i++) {
 	</tr>
 <?php
 $total = $total + $_SESSION["amounts"][$i];
-}
 $_SESSION["total"] = $total;
-?>
-<?php
 }
 ?>
+
 	<tr>
 		<td colspan="5"></td>
 	</tr>
