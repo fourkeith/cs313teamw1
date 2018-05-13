@@ -21,7 +21,6 @@ if ( isset($_GET['reset']) ) {
 		<th width="10px">&nbsp;</th>
 	</tr>
 <?php
-$total = 0;
 foreach ( $_SESSION["cart"] as $i ) {
 ?>
 	<tr>
