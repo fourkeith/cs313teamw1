@@ -20,20 +20,6 @@ if ( isset($_GET["add"]) ) {
 	$_SESSION["cart"][$i] = $i;
 	$_SESSION["qty"][$i] = $qty;
  }
-// delete
-if ( isset($_GET["delete"]) ) {
-	$i = $_GET["delete"];
-	$qty = $_SESSION["qty"][$i];
-	$qty--;
-	$_SESSION["qty"][$i] = $qty;
-	
-	if ($qty == 0) {
-		$_SESSION["amounts"][$i] = 0;
-		unset($_SESSION["cart"][$i]);
-	} else {
-	$_SESSION["amounts"][$i] = $amounts[$i] * $qty;
-	}
-}
 ?>
 
 <h2>Products</h2>
