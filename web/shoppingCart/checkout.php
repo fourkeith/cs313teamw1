@@ -36,11 +36,6 @@ foreach ( $_SESSION["cart"] as $i ) {
 		<td width="10px">&nbsp;</td>
 		<td><a href="?delete=<?php echo($i); ?>">Delete from cart</a></td>
 	</tr>
-<?php
-$total = $total + $_SESSION["amounts"][$i];
-}
-$_SESSION["total"] = $total;
-?>
 	<tr>
 		<td colspan="7">Total : <?php echo($total); ?></td>
 	</tr>

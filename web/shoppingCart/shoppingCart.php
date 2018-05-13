@@ -55,6 +55,11 @@ for ($i=0; $i< count($products); $i++) {
 		<td><a href="?add=<?php echo($i); ?>">Add to cart</a></td>
 	</tr>
 <?php
+$total = $total + $_SESSION["amounts"][$i];
+}
+$_SESSION["total"] = $total;
+?>
+<?php
 }
 ?>
 	<tr>
