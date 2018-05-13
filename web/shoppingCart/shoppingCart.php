@@ -45,14 +45,13 @@ if ( isset($_GET["delete"]) ) {
 }
 ?>
 
-<h2>List of All Products</h2>
+<h2>Products</h2>
 <table>
 	<tr>
 		<th>Product</th>
 		<th width="10px">&nbsp;</th>
 		<th>Amount</th>
 		<th width="10px">&nbsp;</th>
-		<th>Action</th>
 	</tr>
 <?php
 for ($i=0; $i< count($products); $i++) {
@@ -87,7 +86,6 @@ if ( isset($_SESSION["cart"]) ) {
 		<th width="10px">&nbsp;</th>
 		<th>Amount</th>
 		<th width="10px">&nbsp;</th>
-		<th>Action</th>
 	</tr>
 <?php
 $total = 0;
