@@ -9,9 +9,7 @@ if ( isset($_GET['reset']) ) {
 		unset($_SESSION["cart"]); 
 	}
 }
-if ( isset($_SESSION["cart"]) ) {
-?>
-<br/><br/><br/>
+
 <h2>Cart</h2>
 <table>
 	<tr>
