@@ -7,7 +7,7 @@ session_start();
 
 <h2>Please give us your address so we can send you your products.</h2>
 <h3>Address</h3>
-<form method="post" action="invoice.php">
+<form method="post" action="endCart.php">
 	<p>Name: <input type="text" name="name"></p>
 	<p>Street: <input type="text" name="street"></p>
 	<p>City: <input type="text" name="city"></p>

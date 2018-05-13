@@ -2,8 +2,8 @@
 // start session
 session_start();
 //define arrays
-$products = array("Jolly Ranchers", "Twix", "Snickers");
-$amounts = array("3.99", "1.99", "2.99");
+$products = array("Small Watch", "Medium Watch", "Large Watch", "Jumbo Watch");
+$amounts = array("10", "20", "30", "40");
 // add item values
 if ( !isset($_SESSION["total"]) ) {
 	$_SESSION["total"] = 0;
@@ -111,7 +111,7 @@ $_SESSION["total"] = $total;
 		<td colspan="7">Total : <?php echo($total); ?></td>
 	</tr>
 </table>
-<a href="display.php">Checkout</a>
+<a href="showCart.php">Checkout</a>
 <?php
 }
 ?>
