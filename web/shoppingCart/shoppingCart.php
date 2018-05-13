@@ -61,6 +61,6 @@ for ($i=0; $i< count($products); $i++) {
 		<td colspan="5"></td>
 	</tr>
 	<tr>
-//		<td colspan="5"><a href="?reset=true">Reset Cart</a></td>
+		<td colspan="5"><a href="showCart.php">Checkout</a></td>
 	</tr>
 </table>

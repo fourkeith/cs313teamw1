@@ -1,4 +1,5 @@
 <?php
+include'./web/nav.php'
 session_start();
 // reset
 if ( isset($_GET['reset']) ) {
@@ -44,7 +45,6 @@ $_SESSION["total"] = $total;
 		<td colspan="7">Total : <?php echo($total); ?></td>
 	</tr>
 </table>
-<a href="showCart.php">Checkout</a>
 <a href="?reset=true">Reset Cart</a></td>
 <?php
 }
