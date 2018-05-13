@@ -9,7 +9,7 @@ if ( isset($_GET['reset']) ) {
 		unset($_SESSION["cart"]); 
 	}
 }
-
+?>
 <h2>Cart</h2>
 <table>
 	<tr>
