@@ -53,6 +53,6 @@ foreach ( $_SESSION["cart"] as $i ) {
 <?php
 }
 ?>
-Total : <?php echo($total); ?>
+Total : <?php echo($_SESSION["total"]); ?><br/>
 <a href="showCart.php">Submit</a>
 <a href="?reset=true">Reset Cart</a>
