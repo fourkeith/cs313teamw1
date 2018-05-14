@@ -1,6 +1,6 @@
 <?php
 session_start();
-include'./web/nav.php';
+include'nav.php';
 // reset
 if ( isset($_GET['reset']) ) {
 	if ($_GET["reset"] == 'true') {
