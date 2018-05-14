@@ -20,7 +20,6 @@ if ( isset($_GET["delete"]) ) {
 	
 	if ($qty == 0) {
 		$_SESSION["amounts"][$i] = 0;
-        $_SESSION["total"] = $_SESSION["total"] - $_SESSION["amounts"][$i];
 		unset($_SESSION["cart"][$i]);
 	} else {
 	$_SESSION["amounts"][$i] = $amounts[$i] * $qty;
@@ -38,6 +37,7 @@ if ( isset($_GET["delete"]) ) {
 		<th width="10px">&nbsp;</th>
 	</tr>
 <?php
+$total = 0;
 foreach ( $_SESSION["cart"] as $i ) {
 ?>
 	<tr>
@@ -51,6 +51,8 @@ foreach ( $_SESSION["cart"] as $i ) {
 	</tr>
 </table>
 <?php
+$total = $total + $_SESSION["amounts"][$i];
+$_SESSION["total"] = $total;
 }
 ?>
 <br/>
