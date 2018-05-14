@@ -52,6 +52,7 @@ foreach ( $_SESSION["cart"] as $i ) {
 </table>
 <a href="showCart.php">Submit</a>
 <a href="?reset=true">Reset Cart</a>
+<a href="shoppingCart.php">Browse Items</a>
 <?php
 }
 ?>
