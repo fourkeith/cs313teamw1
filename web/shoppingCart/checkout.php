@@ -1,6 +1,8 @@
 <?php
 session_start();
 include'nav.php';
+$products = array("Small Watch", "Medium Watch", "Large Watch", "Jumbo Watch");
+$amounts = array("10", "20", "30", "40");
 // reset
 if ( isset($_GET['reset']) ) {
 	if ($_GET["reset"] == 'true') {
@@ -39,7 +41,7 @@ if ( isset($_GET["delete"]) ) {
 foreach ( $_SESSION["cart"] as $i ) {
 ?>
 	<tr>
-		<td><?php echo( $products[$_SESSION["name"][$i]] ); ?></td>
+		<td><?php echo( $products($_SESSION["cart"][$i]) ); ?></td>
 		<td width="10px">&nbsp;</td>
 		<td><?php echo( $_SESSION["qty"][$i] ); ?></td>
 		<td width="10px">&nbsp;</td>

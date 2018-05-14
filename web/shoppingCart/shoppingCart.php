@@ -17,7 +17,6 @@ if ( !isset($_SESSION["total"]) ) {
 if ( isset($_GET["add"]) ) {
 	$i = $_GET["add"];
 	$qty = $_SESSION["qty"][$i] + 1;
-    $_SESSION["name"][$i] = $products[$i];
 	$_SESSION["amounts"][$i] = $amounts[$i] * $qty;
 	$_SESSION["cart"][$i] = $i;
 	$_SESSION["qty"][$i] = $qty;
