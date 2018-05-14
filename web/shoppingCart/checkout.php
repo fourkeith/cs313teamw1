@@ -47,10 +47,11 @@ foreach ( $_SESSION["cart"] as $i ) {
 		<td width="10px">&nbsp;</td>
 		<td><a href="?delete=<?php echo($i); ?>">Delete from cart</a></td>
 	</tr>
-</table><br/>
+</table>
 <?php
 }
 ?>
+<br/>
 Total : <?php echo($_SESSION["total"]); ?><br/>
 <a href="showCart.php">Submit</a><br/>
 <a href="?reset=true">Reset Cart</a>
