@@ -2,9 +2,8 @@
    <div class="container-fluid">
       <div>
          <a href="/home.php">Assignments page - </a>
-	 <a href="/keith.php">Keith's Page - </a>
-	 <a href="/hello.html">Prove 1 - </a>
-	 <a href="/shoppingCart/shoppingCart.php">Prove 3</a>
+	 <a href="/shoppingCart.php">Browse Items - </a>
+	 <a href="/checkout.php">Cart - </a>
       </div>
    </div>
 </nav>
