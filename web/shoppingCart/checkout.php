@@ -5,8 +5,7 @@ if ( isset($_GET['reset']) ) {
 	if ($_GET["reset"] == 'true') {
 		unset($_SESSION["qty"]); 
 		unset($_SESSION["amounts"]); 
-		unset($_SESSION["total"]); 
-		unset($_SESSION["cart"]); 
+		unset($_SESSION["total"]);  
 	}
 }
 // delete
