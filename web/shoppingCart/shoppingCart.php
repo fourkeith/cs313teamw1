@@ -1,4 +1,5 @@
 <?php
+include'nav.php';
 // start session
 session_start();
 //define arrays

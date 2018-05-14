@@ -1,4 +1,5 @@
 <?php
+include'nav.php';
 session_start();
 ?>
 
