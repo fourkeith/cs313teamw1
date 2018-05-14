@@ -41,7 +41,7 @@ if ( isset($_GET["delete"]) ) {
 foreach ( $_SESSION["cart"] as $i ) {
 ?>
 	<tr>
-		<td><?php echo( $products($_SESSION["cart"][$i]) ); ?></td>
+		<td><?php echo( $products[$_SESSION["cart"][$i]] ); ?></td>
 		<td width="10px">&nbsp;</td>
 		<td><?php echo( $_SESSION["qty"][$i] ); ?></td>
 		<td width="10px">&nbsp;</td>
