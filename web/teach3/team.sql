@@ -1,9 +1,3 @@
--- Create Database
-CREATE DATABASE Talks;
-
--- Connect
-\c Talks;
-
 CREATE TABLE public.Event (
       ID SERIAL PRIMARY KEY
     , NAME  VARCHAR(50) NOT NULL
@@ -30,6 +24,7 @@ CREATE TABLE public.Speakers (
       ID SERIAL PRIMARY KEY
     , SESSIONID INT         NOT NULL REFERENCES public.Sessions(ID)
     , NAME      VARCHAR(50) NOT NULL
+    , TITLE     VARCHAR(50) NOT NULL
 );
 
 -- Index
