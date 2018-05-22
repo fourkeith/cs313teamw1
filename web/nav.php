@@ -6,7 +6,7 @@
 	 <a href="/hello.html">Prove 1 - </a>
 	 <a href="/shoppingCart/shoppingCart.php">Prove 3 - </a>
      <a href="/test/index.php">test - </a>
-     <a href="/customerdb/customer.php">Prove 5</a>
+     <a href="customer.php">Prove 5</a>
       </div>
    </div>
 </nav>
