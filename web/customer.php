@@ -27,6 +27,10 @@ $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $statement = $db->query('SELECT * FROM customer');
 $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 
+while($row = mysql_fetch_array($result)) {
+echo $row['fieldname'];
+}
+
 ?>
 </body>
 
