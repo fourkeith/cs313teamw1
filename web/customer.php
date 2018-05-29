@@ -11,7 +11,8 @@
 <?php 
 try
 {
-    $db = new PDO('pgsql:host=192.168.0.223;dbname=Customer');
+    $user = 'fitfour'
+    $db   = new PDO('pgsql:host=192.168.0.223;dbname=Customer', $user);
 }
 catch (PDOException $ex)
 {
