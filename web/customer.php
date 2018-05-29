@@ -11,7 +11,7 @@
 <?php 
 try
 {
-    $db = new PDO('pgsql:postgres://ckrwvvgcjuonay:69b4b785cd636cf6822ebeaaa6f1364010bd051ffb6fa9dbf8ad960a06b260ec@ec2-50-19-232-205.compute-1.amazonaws.com:5432/d7degarv6j3a0b');
+    $db = new PDO('pgsql:host=192.168.0.223;dbname=Customer');
 }
 catch (PDOException $ex)
 {
