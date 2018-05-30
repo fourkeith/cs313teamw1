@@ -41,6 +41,7 @@
         {
         
         echo '<p>';
+        echo $row['customerid'];
 //        echo     $row['customerid'] . ' ' . $row['firstname'] ' '; 
 //        echo   . $row['lastname'] . ' ' . $row['address'];
 //        echo   . $row['zip'] . ' ' . $row['phone'];
