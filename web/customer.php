@@ -32,6 +32,8 @@ die();
 <body>
 <?php  include 'nav.php'; ?>
 
+<?php
+
 $statement = $db->prepare("SELECT * FROM customer");
 $statement ->execute;
 
@@ -45,6 +47,8 @@ echo $row['customerid'] . ' ' . $row['firstname'] ' '
 echo '<p>';
 
 }
+
+?>
 
 </body>
 
