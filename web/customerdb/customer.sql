@@ -94,3 +94,8 @@ INSERT INTO Work
 VALUES (
       4, 'Oil Change', '04/08/2016', 000667
 );
+
+CREATE USER walmart WITH PASSWORD 'walmart';
+GRANT SELECT, INSERT, UPDATE ON customer TO walmart;
+GRANT SELECT, INSERT, UPDATE ON cars TO walmart;
+GRANT SELECT, INSERT, UPDATE ON work TO walmart;
