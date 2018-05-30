@@ -35,7 +35,7 @@
     <?php
 
         $statement = $db->prepare("SELECT * FROM customer");
-//        $statement ->execute;
+        $statement ->execute;
 
 //        while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 //        {
