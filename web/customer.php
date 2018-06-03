@@ -43,6 +43,9 @@
     <div>
         <button onclick="worktable()">Work Table</button>
     </div>
+    <div>
+        <button onclick="newentry()">Add Entry</button>
+    </div>
 
     <?php
 
@@ -78,7 +81,7 @@
             echo '<p>';
             echo $row['carid'] . ' ' . $row['make'] . ' '; 
             echo $row['model'] . ' ' . $row['year'] . ' ';
-            echo $row['vin'] . ' ' . $row['licenseplate'];
+            echo $row['vin'] . ' ' . $row['licenseplate'] . ' ';
             echo $row['odometer'];
             echo '<p>';
     
@@ -96,6 +99,8 @@
             echo '<p>';
     
         }
+
+        function newentry()
 
     ?>
 
