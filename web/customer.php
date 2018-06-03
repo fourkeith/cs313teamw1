@@ -33,15 +33,15 @@
     <?php  include 'nav.php'; ?>
 
     <div>
-        <button onclick="customertable()" value="Customer Table">
+        <button onclick="customertable()">Customer Table</button>
     </div>
 
     <div>
-        <button onclick="carstable()" value="Cars Table">
+        <button onclick="carstable()">Cars Table</button>
     </div>
 
     <div>
-        <button onclick="worktable()" value="Work Table">
+        <button onclick="worktable()">Work Table</button>
     </div>
 
     <?php
