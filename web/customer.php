@@ -58,6 +58,45 @@
             include 'wtable.php';
         }
 
+        $statement = $db->prepare("SELECT customerid, firstname, lastname, address, zip, phone FROM customer");
+        $statement ->execute();
+    
+        while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+            
+            echo '<p>';
+            echo $row['customerid'] . ' ' . $row['firstname'] . ' '; 
+            echo $row['lastname'] . ' ' . $row['address'] . ' ';
+            echo $row['zip'] . ' ' . $row['phone'];
+            echo '<p>';
+    
+        }
+
+        $statement = $db->prepare("SELECT carid, make, model, year, vin, licenseplate, odometer FROM cars");
+        $statement ->execute();
+    
+        while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {            
+            echo '<p>';
+            echo $row['carid'] . ' ' . $row['make'] . ' '; 
+            echo $row['model'] . ' ' . $row['year'] . ' ';
+            echo $row['vin'] . ' ' . $row['licenseplate'];
+            echo $row['odometer'];
+            echo '<p>';
+    
+        }
+
+        $statement = $db->prepare("SELECT workid, description, workdate, keytag FROM work");
+        $statement ->execute();
+
+        while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+        {
+            
+            echo '<p>';
+            echo $row['workid'] . ' ' . $row['description'] . ' '; 
+            echo $row['workdate'] . ' ' . $row['keytag'];
+            echo '<p>';
+    
+        }
+
     ?>
 
 </body>
