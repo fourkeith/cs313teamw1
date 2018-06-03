@@ -33,58 +33,30 @@
     <?php  include 'nav.php'; ?>
 
     <div>
-        <input type="button" onclick="showcustomer()" value="Customer Table">
-        <input type="button" onclick="showcars()"     value="Cars Table">
-        <input type="button" onclick="showwork()"     value="Work Table">
-        <input type="reset">
+        <button onclick="customertable()" value="Customer Table">
+    </div>
+
+    <div>
+        <button onclick="carstable()" value="Cars Table">
+    </div>
+
+    <div>
+        <button onclick="worktable()" value="Work Table">
     </div>
 
     <?php
 
-    function showcustomer() {
-        $statement = $db->prepare("SELECT customerid, firstname, lastname, address, zip, phone FROM customer");
-        $statement ->execute();
-    
-        while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-            
-            echo '<p>';
-            echo $row['customerid'] . ' ' . $row['firstname'] . ' '; 
-            echo $row['lastname'] . ' ' . $row['address'] . ' ';
-            echo $row['zip'] . ' ' . $row['phone'];
-            echo '<p>';
-    
+        function customertable() {
+            include cutable.php;
         }
-    }
 
-    function showcars() {
-        $statement = $db->prepare("SELECT carid, make, model, year, vin, licenseplate, odometer FROM cars");
-        $statement ->execute();
-    
-        while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {            
-            echo '<p>';
-            echo $row['carid'] . ' ' . $row['make'] . ' '; 
-            echo $row['model'] . ' ' . $row['year'] . ' ';
-            echo $row['vin'] . ' ' . $row['licenseplate'];
-            echo $row['odometer'];
-            echo '<p>';
-    
+        function carstable() {
+            include catable.php;
         }
-    }
 
-    function showwork() {
-        $statement = $db->prepare("SELECT workid, description, workdate, keytag FROM work");
-        $statement ->execute();
-
-        while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-        {
-            
-            echo '<p>';
-            echo $row['workid'] . ' ' . $row['description'] . ' '; 
-            echo $row['workdate'] . ' ' . $row['keytag'];
-            echo '<p>';
-    
+        function worktable() {
+            include wtable.php;
         }
-    }
 
     ?>
 
