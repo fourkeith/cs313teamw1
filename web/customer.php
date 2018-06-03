@@ -47,15 +47,15 @@
     <?php
 
         function customertable() {
-            include "cutable.php";
+            include 'cutable.php';
         }
 
         function carstable() {
-            include "catable.php";
+            include 'catable.php';
         }
 
         function worktable() {
-            include "wtable.php";
+            include 'wtable.php';
         }
 
     ?>
