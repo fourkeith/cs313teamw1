@@ -30,58 +30,15 @@
 </head>
 
 <body>
+    <form action="search.php">
+        <input type="text" name="fname" value="First Name"><br />
+        <input type="text" name="lname" value="Last Name"><br />
+        <input type="text" name="vin"   value="Vin"><br />
+        <input type="submit" value="Submit">
+    </form>
     <?php  include 'nav.php';
 
-        function customertable() {
-            include 'cutable.php';
-        }
-
-        function carstable() {
-            include 'catable.php';
-        }
-
-        function worktable() {
-            include 'wtable.php';
-        }
-
-        $statement = $db->prepare("SELECT customerid, firstname, lastname, address, zip, phone FROM customer");
-        $statement ->execute();
-    
-        while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-            
-            echo '<p>';
-            echo $row['customerid'] . ' ' . $row['firstname'] . ' '; 
-            echo $row['lastname'] . ' ' . $row['address'] . ' ';
-            echo $row['zip'] . ' ' . $row['phone'];
-            echo '<p>';
-    
-        }
-
-        $statement = $db->prepare("SELECT carid, make, model, year, vin, licenseplate, odometer FROM cars");
-        $statement ->execute();
-    
-        while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {            
-            echo '<p>';
-            echo $row['carid'] . ' ' . $row['make'] . ' '; 
-            echo $row['model'] . ' ' . $row['year'] . ' ';
-            echo $row['vin'] . ' ' . $row['licenseplate'] . ' ';
-            echo $row['odometer'];
-            echo '<p>';
-    
-        }
-
-        $statement = $db->prepare("SELECT workid, description, workdate, keytag FROM work");
-        $statement ->execute();
-
-        while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-        {
-            
-            echo '<p>';
-            echo $row['workid'] . ' ' . $row['description'] . ' '; 
-            echo $row['workdate'] . ' ' . $row['keytag'];
-            echo '<p>';
-    
-        }
+        
 
     ?>
 
