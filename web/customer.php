@@ -30,24 +30,7 @@
 </head>
 
 <body>
-    <?php  include 'nav.php'; ?>
-
-    <div>
-        <button onclick="customertable()">Customer Table</button>
-    </div>
-
-    <div>
-        <button onclick="carstable()">Cars Table</button>
-    </div>
-
-    <div>
-        <button onclick="worktable()">Work Table</button>
-    </div>
-    <div>
-        <button onclick="newentry()">Add Entry</button>
-    </div>
-
-    <?php
+    <?php  include 'nav.php';
 
         function customertable() {
             include 'cutable.php';
