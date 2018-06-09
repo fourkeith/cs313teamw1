@@ -11,12 +11,9 @@
         include 'nav.php';
     ?>
 
-    <form action="search.php">
-        <input type="text" name="fname" value="First Name"><br />
-        <input type="text" name="lname" value="Last Name"><br />
-        <input type="text" name="vin"   value="Vin"><br />
-        <input type="submit" value="Submit">
-    </form>
+    <a href="/search.html">Search the Database</a>
+
+    <a href="/insert.html">Insert into Database</a>
 
 </body>
 
