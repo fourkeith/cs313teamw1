@@ -2,7 +2,7 @@
 
     $db = include 'dbaccess.php';
 
-    $result = pg_insert($db, 'post_log', $_POST);
+    $result = pg_insert($db, 'Customer', $_POST);
     if ($result) {
         echo "Database Insert successful\n";
     }
