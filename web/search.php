@@ -6,6 +6,8 @@
     $query->bindValue(':fname', $_POST['fname'], PDO::PARAM_STR);
     $query->bindValue(':lname', $_POST['lname'], PDO::PARAM_STR);
     $query->execute();
-    $rows = $query->fetchAll(PDO::FETCH_ASSOC);
+    while ($rows = $query->fetchAll(PDO::FETCH_ASSOC)) {
+        echo $row['firstname'] . ' ' . $row['lastname'] . ' ' . $row['address'] . ' ' . $row['zip'] . ' ' . $row['phone'] . '<br />';
+    }
 
 ?>
